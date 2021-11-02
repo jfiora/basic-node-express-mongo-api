@@ -62,7 +62,7 @@ function routes(Book) {
             req.book.remove((err) => {
                 return res.send(err);
             });
-            return res.sendStatus(204);
+            res.setStatus = 204;
         });
 
     return bookRouter;
