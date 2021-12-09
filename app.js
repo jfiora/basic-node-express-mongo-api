@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use('/api', bookRouter);
 
 app.get('/', (req, res) => {
-    res.send('alla le hacen request');
+    res.send('api working :)');
 });
 
 app.server = app.listen(port, () => {
